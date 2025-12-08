@@ -1,0 +1,73 @@
+*{
+	border: 1px solid #2757F5;
+	padding: 25px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;          /* 줄 바꿈 허용 */
+  justify-content: center;  /* 가운데 정렬 */
+  align-items: flex-start;
+  gap: 2vw;                /* 사진 사이 간격 */
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1{
+	font-size: 20px;
+	text-align: center;
+	font-weight: normal;
+}
+
+.img1 {
+	width: 20vw;
+}
+
+.img2 {
+	width: 20vw;
+}
+
+.img3 {
+	width: 20vw;
+}
+
+.img4 {
+	width: 20vw;
+}
+
+.img5 {
+	width: 25vw;
+}
+
+.img6 {
+	width: 25vw;
+}
+
+.img7 {
+	width: 25vw;
+}
+
+.img8 {
+	width: 25vw;
+}
+
+.img9 {
+	width: 25vw;
+}
+/*ul {
+	border: 2px dotted orange;
+}
+
+body {
+	border: 2px solid pink;
+}
+
+html {
+	border: 1px dashed brown;
+}*/
