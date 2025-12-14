@@ -5,10 +5,36 @@
 	box-sizing: border-box;
 }
 
+body {
+  padding: 40px 20px 30px;
+}
+
+/* 이미지 블록 */
+.img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* 도감용 이미지 */
+.img img {
+  width: 280px;
+  height: auto;
+  display: block;
+
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
 h1 {
   font-size: 20px;
   text-align: center;
-  font-weight: normal;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
