@@ -1,6 +1,5 @@
 *{
-	/*border: 1px solid #2757F5;*/
-	padding: 0;
+  padding: 0;
 	margin: 0;
 	box-sizing: border-box;
   word-break: keep-all;
@@ -8,11 +7,21 @@
 
 body {
   display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0px;
+  min-height: 100vh;
+}
+
+header{ order: 2; }
+main.grid{ order: 1; }
+footer{ order: 3; }
+
+.grid {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   column-gap: 20px;
   row-gap: 15px;
-  padding: 20px 20px 0px;
   align-items: center;
 }
 
@@ -20,38 +29,26 @@ figure {
 	flex: 0 0 auto;
   margin: 0;
   position: relative;
-  /*opacity: 0.8;*/
   width: fit-content; }
 
 figure:hover {
-  opacity: 1;
   transform: scale(1.05);
 }
 
 figure img {display: block;}
 
+h1 {
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}
+
 header {
   width: 100%;
   text-align: center;
   flex-basis: 100%;
-}
-
-
-h1 {
-  font-size: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-h2 {
-  font-size: 16px;
-  text-align: center;
-  width: 100%;
-}
-
-p{
-  font-size: 12px;
-  text-align: center;
+  padding-top: 10px;
+  margin-top: auto
 }
 
 footer {
@@ -67,38 +64,17 @@ footer {
   color: gray;
 }
 
-summary{
-  list-style: none;
-  cursor: pointer;
-}
-summary::-webkit-details-marker{ display: none; }
-
-figcaption{
-  background: black;
-  color: white;
-  position: absolute;
-  top: 110%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: none;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  white-space: normal;
-  overflow-wrap: anywhere;
-  z-index: 99;
-  padding: 5px;
-  line-height: 1.5;
-}
-
-details[open] figcaption{
-  display: block;
-}
+figure.img2 { align-self: flex-start; }
+figure.img4 { align-self: flex-end; }
+figure.img11 { align-self: flex-start; }
+figure.img10 { align-self: flex-start; }
+figure.img13 { align-self: flex-start; }
+figure.img16 { align-self: flex-direction; }
 
 .img1 img { width: 23vw; height: auto;}
 .img2 img { width: 10vw; height: auto;}
 .img3 img { width: 12vw; height: auto;}
-.img4 img { width: 8vw;; height: auto;}
+.img4 img { width: 8vw; height: auto;}
 .img5 img { width: 33vw; height: auto; }
 
 .img6 img { width: 4vw; height: auto;}
@@ -119,15 +95,19 @@ details[open] figcaption{
 
 @media (max-width: 768px) {
   /**{border: 1px solid #2757F5;}*/
-  body {
+  .grid {
     column-gap: 2vw;
-    row-gap: 4vh;
+    row-gap: 2vh;
+  }
+
+  h1{
+    font-size: 24px;
   }
 
   .img1 img { width: 30vw; height: auto;}
   .img2 img { width: 18vw; height: auto;}
   .img3 img { width: 22vw; height: auto;}
-  .img4 img { width: 13vw;; height: auto;}
+  .img4 img { width: 13vw; height: auto;}
 
   .img5 img { width: 65vw; height: auto; }
   .img6 img { width: 7vw; height: auto;}
@@ -146,5 +126,5 @@ details[open] figcaption{
   .img16 img { width: 9vw; height: auto; }
   .img17 img { width: 25vw; height: auto;}
 
-  .img15 img { width: 95vw; height: auto; }
+  .img15 img { width: 90vw; height: auto; }
 }
